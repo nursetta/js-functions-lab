@@ -82,9 +82,18 @@ function findLongestWord(str) {
 
 
 // Question 8
-function filterLongWords () {
-  
+var ary = ['one', 'two', 'three']
+function filterLongWords (i, x) {
+	for (var j = 0; j < x.length; i++) {
+		if (x[j] >= i ) {
+			console.log(' This works')
+			return j;
+		} else {
+			console.log( ' number not big enough')
+		}
+	}  
 }
+filterLongWords(2, ary);
 
 
 // Bonus 1
