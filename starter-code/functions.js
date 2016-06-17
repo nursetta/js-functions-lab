@@ -29,21 +29,22 @@ function isCharacterAVowel(char) {
 }
 
 // Question 4
-var arrayOfNumbers = [1,2,3,4];
+var one = [1,2,3,4];
 
-function sumArray(num) {
-	var sum = 0;
-	for (var i = 0; i < num.length; i++) {
-		sum += num[i];
+function sumArray(arr) {
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
 }
-	return sum;	
-}
+sumArray(one);
 
 
 // Question 4
-var arrayOfNumbers = [1,2,3,4];
+var one = [1,2,3,4];
 
-	function sumArray(num) {
+	function multiplyArray(num) {
 		var multiply = 1;
 		for (var i = 0; i < num.length; i++) {
 			multiply *= num[i];
@@ -51,11 +52,12 @@ var arrayOfNumbers = [1,2,3,4];
 		return multiply;
 	
 }
+multiplyArray(one);
 
 // Question 5
 var numberOfArguments = function(){
-  
-}
+    return args.length;
+};
 
 
 
@@ -82,18 +84,17 @@ function findLongestWord(str) {
 
 
 // Question 8
-var ary = ['one', 'two', 'three']
-function filterLongWords (i, x) {
-	for (var j = 0; j < x.length; i++) {
-		if (x[j] >= i ) {
-			console.log(' This works')
-			return j;
+var newarray = ['one', 'two', 'three']
+function filterLongWords (i, arrayOfWords) {
+	for (var j = 0; j < arrayOfWords.length; j++) {
+		if (arrayOfWords[j].length >= i ) {
+		console.log(arrayOfWords[j]);
 		} else {
-			console.log( ' number not big enough')
+			
 		}
 	}  
 }
-filterLongWords(2, ary);
+filterLongWords(6, newarray);
 
 
 // Bonus 1
